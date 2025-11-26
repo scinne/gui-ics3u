@@ -1,6 +1,8 @@
 package gui;
 
 public class Laptop {
+
+    // variables
     private String brand;
     private String model;
     private String type;
@@ -14,6 +16,7 @@ public class Laptop {
     private int speedRating;
     private int memory;
     private int storage;
+    private int memoryRating;
     private String gpuBrand;
     private String gpuModel;
     private String connectivity;
@@ -28,8 +31,11 @@ public class Laptop {
 
     public Laptop(String brand, String model, String type, double price, int qualityRating, String cpuBrand,
             String cpuType, String cpuModel, int cpuCores, double cpuSpeed, int speedRating, int memory, int storage,
-            String gpuBrand, String gpuModel, String connectivity, String operatingSystem, double displaySize,
-            String resolution, boolean touchscreen, double weight, int portabilityRating, String hyperlink, int score) {
+            int memoryRating, String gpuBrand, String gpuModel, String connectivity, String operatingSystem,
+            double displaySize, String resolution, boolean touchscreen, double weight, int portabilityRating,
+            String hyperlink, int score) {
+
+        // assignments
         this.brand = brand;
         this.model = model;
         this.type = type;
@@ -43,6 +49,7 @@ public class Laptop {
         this.speedRating = speedRating;
         this.memory = memory;
         this.storage = storage;
+        this.memoryRating = memoryRating;
         this.gpuBrand = gpuBrand;
         this.gpuModel = gpuModel;
         this.connectivity = connectivity;
@@ -55,6 +62,8 @@ public class Laptop {
         this.hyperlink = hyperlink;
         this.score = score;
     }
+
+    // getters + setters
 
     public String getBrand() {
         return brand;
@@ -158,6 +167,14 @@ public class Laptop {
 
     public void setStorage(int storage) {
         this.storage = storage;
+    }
+
+    public int getMemoryRating() {
+        return memoryRating;
+    }
+
+    public void setMemoryRating(int memoryRating) {
+        this.memoryRating = memoryRating;
     }
 
     public String getGpuBrand() {
