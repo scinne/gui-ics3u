@@ -11,9 +11,10 @@
 - **`cpuModel`**: `String`
 - **`cpuCores`**: `int`
 - **`cpuSpeed`**: `double`
-- **`speedRating`**: `int`.
+- **`speedRating`**: `int`
 - **`memory`**: `int`
 - **`storage`**: `int`
+- **`memoryRating`**: `int`
 - **`gpuBrand`**: `String`
 - **`gpuModel`**: `String`
 - **`connectivity`**: `String`
